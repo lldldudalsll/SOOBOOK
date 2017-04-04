@@ -1,0 +1,56 @@
+
+//--------------------------------------------------------------------------
+//------------------------------grid setting--------------------------------
+//--------------------------------------------------------------------------
+
+
+
+
+//-----------------------------basic setting--------------------------------
+
+.container
+  height: 100vh
+
+.row
+  content: ''
+  display: block
+  clear: both
+
+//---------------------------breakpoint variable----------------------------
+$small_screen_width: 760px
+$wide_screen_width: 960px
+
+
+//------------------------------mobile width--------------------------------
+
+$mobile_width: 25%
+$mobile_total: 4
+
+=mb-grid
+  @for $i from 1 through $mobile_total
+    @media screen   
+      .mb-#{$i}-#{$mobile_total}
+        width: ($mobile_width * $i)
+
+//------------------------------tablet width--------------------------------
+
+$tablet_width: 12.5%
+$tablet_total: 8
+
+=tb-grid
+  @for $i from 1 through $tablet_total
+    @media screen 
+      .tb-#{$i}-#{$tablet_total}
+        width: ($tablet_width * $i)
+
+//------------------------------desktop width-------------------------------
+
+$desktop-column: 60px
+$desktop-total: 12
+$desktop-gutter: 20px
+
+=dt-grid
+  @for $i from 1 through $desktop-total
+    @media screen 
+      .dt-#{$i}-#{$desktop-total}
+        width: ($desktop-column * $i + $desktop-gutter * ($i - 1))

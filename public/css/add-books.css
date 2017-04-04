@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #181818
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.logo {
+  color: #eceef1;
+}
+
+.header {
+  padding: 0 100px;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 34, 34, 0.6);
+  color: #fff;
+}
+
+.header .login {
+  text-align: right;
+  display: flex;
+}
+
+.added__book {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.added__book .added__book--input {
+  width: 400px;
+  text-align: center;
+  height: 30px;
+  font-size: 16px;
+}
+
+.added__book .added__book--btn {
+  margin-top: 20px;
+}
+
+.results {
+  width: 1000px;
+  height: 1000px;
+  margin: 10px;
+}
+.results img{
+  margin: 10px;
+}
+.sign-section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.log-out {
+  padding-top: 16px;
+  padding-left: 20px;
+}

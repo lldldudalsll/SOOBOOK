@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add book page</title>
+    <link rel="stylesheet" href="./css/add-books.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <!--<img src="../images/miniLogo.png" alt="SOO BOOK" width="250px" height="50px">-->
+                SOO BOOK
+            </h1>
+            
+            <div class="sign-section">
+                <div class="login">
+                    <p><span>...</span>님</p>
+                </div>
+                <div class="log-out">
+                    <a href="index.html">로그아웃</a>
+                </div>
+            </div>
+            
+        </header>
+
+        <main class="added__book">
+            <h1>Book Finder</h1>
+            <input type="text" class="added__book--input" placeholder="Title or Author">
+            <button type="submit" class="added__book--btn">Search</button>
+            <div class="results"></div>
+        </main>
+
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./js/add-books.js"></script>
+</body>
+</html>

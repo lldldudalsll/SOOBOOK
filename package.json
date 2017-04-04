@@ -1,0 +1,12 @@
+{
+  "name": "soobook",
+  "version": "1.0.0",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "json-server": "^0.9.6"
+  },
+  "scripts": {
+    "server": "./node_modules/.bin/json-server public/DB/member.json -w",
+    "sass": "node-sass -w -r sass -o css --output-style expanded"
+  }
+}

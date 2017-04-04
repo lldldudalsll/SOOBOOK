@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SOO BOOK</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!--<link rel="stylesheet" href="css/bulma.min.css">-->
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <!--<img src="../images/miniLogo.png" alt="SOO BOOK" width="250px" height="50px">-->
+                SOO BOOK
+            </h1>
+            
+            <div class="login">
+                <form>
+                    <div class="user-login">
+                        <label for="user-id"></label>
+                        <input type="email" id="user-id" required placeholder="ID: guest@gmail.com">
+                    
+                        <label for="user-pw"></label>
+                        <input type="password" id="user-pw" required placeholder="PW: 8자리 이상">
+                        <button type="button" class="btn-login">로그인</button>
+                    </div>
+                </form>
+                <div class="create-account">
+                    <button type="button" class="btn-create-account"><a href="sign-up-page.html">회원가입</a></button>
+                </div>
+                <a href="#" id="signup-api" class="list-group-item list-group-item-success">Signup API</a>
+            </div>
+            
+        </header>
+
+        <!--<div id="sign-up">
+            <sign-up-modal></sign-up-modal>
+        </div>-->
+
+        <main class="main">
+            <video src="./video/Library.mp4" loop autoplay></video>
+            <div class="main-comment">
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                   adipisicing elit. Ab quasi nobis ad vitae ut 
+                   ratione dolores illum pariatur expedita deleniti.
+                </p>
+            </div>
+        </main>
+
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/log-in.js"></script>
+   
+    <!--<script src="./js/vue-sign-up-modal.js"></script>-->
+    
+    <!-- CDN: Vue -->
+    <!--<script src="https://unpkg.com/vue@2.2.4/dist/vue.js"></script>-->
+</body>
+</html>

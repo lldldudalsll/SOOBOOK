@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #181818
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.logo {
+  color: #eceef1;
+}
+
+.header {
+  padding: 0 100px;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 34, 34, 0.6);
+  color: #fff;
+}
+
+.header .login {
+  text-align: right;
+  display: flex;
+}
+
+.user-login {
+  padding: 0 5px;
+}
+
+input {
+  width: 150px;
+  height: 20px;
+  border-radius: 3px;
+  /*border-style: none;*/
+}
+
+button {
+  width: 55px;
+  height: 25px;
+  border-radius: 3px;
+  border-style: none;
+  background: #eceef1;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eceef1;
+  min-height: 80vh;
+}
+
+.add-book {
+  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+  margin-top: 100px;
+  padding-top: 200px;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+
+
+.sign-section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.log-out {
+  padding-top: 16px;
+  padding-left: 20px;
+}

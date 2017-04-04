@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.logo {
+  color: #eceef1;
+}
+
+.header {
+  padding: 0 100px;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 34, 34, 0.6);
+  color: #fff;
+}
+
+.header .login {
+  text-align: right;
+  display: flex;
+}
+
+.user-login {
+  padding: 0 5px;
+}
+
+input {
+  width: 150px;
+  height: 20px;
+  border-radius: 3px;
+  border-style: none;
+}
+
+button {
+  width: 55px;
+  height: 25px;
+  border-radius: 3px;
+  border-style: none;
+  background: #eceef1;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eceef1;
+  min-height: 80vh;
+}
+
+.main .main-comment {
+  width: 400px;
+  padding-right: 1000px;
+  font-size: 20px;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*#sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}*/
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*z-index: 10*/
+}
+
+.modal-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(35, 24, 24, 0.9);
+}
+
+.modal-content {
+  margin: 0 auto;
+  margin-top: 120px;
+  border-radius: 10px
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 5px;
+  width: 500px;
+  height: 450px;
+  background: #fff
+}
+
+.box__input-id{
+  border-bottom: 1px solid #181818;
+  margin: 100px 0 30px 0;
+}
+.box__input-pw{
+  border-bottom: 1px solid #181818;
+  margin: 30px 0;
+}
+.box__input-nickname{
+  border-bottom: 1px solid #181818;
+  margin: 30px 0;
+}
+
+.modal-close{
+  position: absolute;
+  background-color: #ad8d8d;
+  border-style: none;
+  top: 0;
+  right: 0px;
+  color: #fff
+}

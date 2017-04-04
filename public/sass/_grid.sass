@@ -1,0 +1,41 @@
+@import "_grid_setting"
+
+//---------------------------------------------------
+//-------------------grid-system---------------------
+//---------------------------------------------------
+
+
+
+//---------------------mobile------------------------
+
+@media screen and (max-width: $small_screen_width - 1)
+    .container
+        width: 100%
+
+    [class*="mb-"]
+        float: left
+        padding: 0 10px
+    +mb-grid    
+
+//---------------------tablet------------------------
+
+@media screen and (min-width: $small_screen_width) and (max-width: $wide_screen_width - 1)
+
+    .container
+        width: 100%
+
+    [class*="tb-"]
+        float: left
+        padding: 0 10px              
+    +tb-grid
+
+//---------------------desktop-----------------------
+
+@media screen and (min-width: $wide_screen_width)
+    .container
+        width: $wide_screen_width
+        margin: 0 auto
+    [class*="dt-"]
+        float: left
+        margin: 0 10px
+    +dt-grid       
