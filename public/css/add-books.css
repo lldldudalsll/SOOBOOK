@@ -66,3 +66,11 @@ a {
   padding-top: 16px;
   padding-left: 20px;
 }
+
+.book-save{
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #181818;
+  border-radius: 3px;
+  color: #181818;
+}

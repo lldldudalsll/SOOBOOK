@@ -1,0 +1,65 @@
+/* -----기본 설정----- */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff
+}
+.wrapper {
+  height: 100vh;
+}
+
+/* ----- header ----- */
+
+.header {
+  padding: 0 100px;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 34, 34, 0.6);
+  color: #fff;
+}
+.sign-section {
+  display: flex;
+}
+.log-out {
+  padding-top: 16px;
+  padding-left: 20px;
+}
+
+/* --- view option --- */
+
+.view-option-control {
+  margin: 50px 0 0 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+select{
+  width: 100px;
+  height: 25px;
+  border: 1px solid #4f4989;
+}
+.view-option-btn{
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  padding-left: 15px;
+  width: 30px;
+  height: 30px;
+}
+.search-mybook {
+  padding-right: 50px;
+}
+
+/* -----   main   ----- */
+
+
+
+

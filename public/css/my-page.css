@@ -4,15 +4,12 @@ body {
   box-sizing: border-box;
 }
 a {
-  color: #181818
+  text-decoration: none;
+  color: #fff
 }
 
 .wrapper {
   height: 100vh;
-}
-
-.logo {
-  color: #eceef1;
 }
 
 .header {
@@ -27,8 +24,14 @@ a {
 }
 
 .header .login {
-  text-align: right;
   display: flex;
+  text-align: right;
+}
+.add-book-btn{
+  color: #181818;
+  border: 1px solid #181818;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 .user-login {
