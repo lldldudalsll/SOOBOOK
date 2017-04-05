@@ -13,8 +13,8 @@
     <div class="wrapper">
         <header class="header">
             <h1 class="logo">
-                <!--<img src="../images/miniLogo.png" alt="SOO BOOK" width="250px" height="50px">-->
-                <a href="./index.html">SOO BOOK</a>
+                <img src="./asset/mainlogo.png" alt="SOO BOOK" width="250px" height="50px">
+                <!--<a href="./index.html">SOO BOOK</a>-->
             </h1>
             
             <div class="sign-section">
@@ -44,6 +44,16 @@
             </div>
         </div>
 
+        <nav class="menu-colorlist" aria-label="select color list">
+          <ul>
+            <li><a href="#" class="menu-colorlist__item--purple color-option" role="button" title="purple" aria-label="purple background"></a></li>
+            <li><a href="#" class="menu-colorlist__item--pink-sky color-option" role="button" title="pink-sky" aria-label="pink-sky backgound"></a></li>
+            <li><a href="#" class="menu-colorlist__item--pink-green color-option" role="button" title="pink-green" aria-label="pink-green background"></a></li>
+            <li><a href="#" class="menu-colorlist__item--grey color-option" role="button" title="grey" aria-label="grey background"></a></li>
+            <li><a href="#" class="menu-colorlist__item--blue color-option" role="button" title="blue" aria-label="blue background"></a></li>
+          </ul>
+        </nav>
+
         <main class="my-bookshelf">
             
         </main>
@@ -53,6 +63,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--<script src="./js/sign-in.js">-->
         
+    </script>
+    <script>
+        // 배경 색상 변경
+        // DOM API, CSS 선택자 중에 클래스 선택자로 대상을 선택
+        var color_list       = document.querySelector('.menu-colorlist')
+        var bg_color         = document.body;
+        var color_list_items = color_list.querySelectorAll('.color-option');
+        // console.log(color_list_items);
+        // 배경 색상 변경
+        for (var i = 0; i < color_list_items.length; i++) {
+          color_list_items[i].onclick = function() {
+            var my_color = window.getComputedStyle(this,null).background;
+            console.log(my_color);
+            bg_color.style.background = my_color;
+            return false;
+          };
+        };
+
     </script>
 </body>
 </html>
