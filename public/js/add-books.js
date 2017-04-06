@@ -10,7 +10,7 @@ function bookSearch() {
         dataType: "json",
 
         success: function(data) {
-            // console.log(data);
+            console.log(data);
             for ( i=0; i < data.items.length; i++){
                 results.innerHTML += "<img src=" + data.items[i].volumeInfo.imageLinks.thumbnail + " >"
             }

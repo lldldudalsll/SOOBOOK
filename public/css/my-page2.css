@@ -43,13 +43,14 @@ a {
 }
 select{
   width: 100px;
-  height: 25px;
+  height: 30px;
   border: 1px solid #d7d0d0;
 }
 .view-option-btn{
+  vertical-align: middle;
   cursor: pointer;
   border: none;
-  /*background: #fff;*/
+  background: none;
   /*padding-left: 15px;*/
   /*width: 30px;*/
   /*height: 30px;*/
@@ -153,12 +154,54 @@ li {
 
 .my-bookshelf {
   display: flex;
+  flex-flow: row wrap;
   margin: 0 auto;
   margin-top: 50px;
-  width: 1500px;
-  height: 700px;
+  width: 80%;
+  height: 60%;
   background: #fff;
   border: 1px solid #d7d0d0;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
+
+.book1 {
+  margin: 10px 0 0 30px;
+  display: flex;
+  flex-flow: column wrap;
+  /*justify-content: center;*/
+  /*align-items: top;*/
+  width: 150px;
+  height: 300px;
+  /*border: 1px solid #181818;*/
+  text-align: center;
+}
+h3 {
+  margin: 0;
+  height: 23px;
+}
+.title {
+  font-size: 15px;
+}
+.author {
+  margin: 10px; 
+}
+.rating {
+  /*unicode-bidi: normal;*/
+  direction: rtl;
+  margin-top: 15px;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
+
+
+

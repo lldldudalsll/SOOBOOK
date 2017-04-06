@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<div id="app">
     <div class="wrapper">
         <header class="header">
             <h1 class="logo">
@@ -19,7 +19,7 @@
             
             <div class="sign-section">
                 <div class="login">
-                    <p><span class="nickname"></span> 님</p>
+                    <p> 님</p>
                 </div>
                 <div class="log-out">
                     <a href="index.html">로그아웃</a>
@@ -35,8 +35,8 @@
                     <option value="등록순 보기">등록순 보기</option>
                     <option value="별점순 보기">별점순 보기</option>
                 </select>    
-                <button class="view-option-btn"><i class="fa fa-th" aria-hidden="true"></i></button>
-                <button class="view-option-btn"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+                <button class="view-option-btn" @click="clicklistview"><i class="fa fa-th fa-2x" aria-hidden="true"></i></button>
+                <button class="view-option-btn" @click="clickdetailview"><i class="fa fa-th-list fa-2x" aria-hidden="true"></i></button>
             </div>
             <div class="search-mybook">
                 <label for="search-my-bookshelf" class="search-book">책장 내 검색</label>
@@ -54,17 +54,32 @@
           </ul>
         </nav>
 
-        <main class="my-bookshelf">
-            
-        </main>
+        
+            <main class="my-bookshelf" v-if="is_visible">
+                <div class="book1" v-for="book in books">
+                    <img :src="book.src" alt="" height="60%">
+                    <h3 class="title">{{book.title}}</h3>
+                    <!--<p class="author">{{book.author}}</p>-->
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
+            </main>
+
+            <main class="my-bookshelf" v-if="!is_visible">
+                <!--<div class="book1" v-for="book in books">-->
+            </main>
+        
 
         
     </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--<script src="./js/sign-in.js">-->
+    
         
     </script>
-    <script>
+    <!--<script>
         // 배경 색상 변경
         // DOM API, CSS 선택자 중에 클래스 선택자로 대상을 선택
         var color_list       = document.querySelector('.menu-colorlist')
@@ -81,6 +96,27 @@
           };
         };
 
+    </script>-->
+    <!-- CDN: Vue -->
+    <script src="https://unpkg.com/vue"></script>
+    <!--<script src="./js/my-page.js"></script>-->
+    <script src="./DB/mybookshelf.js"></script>
+    <script>
+        var vm = new Vue ({
+            el: '#app',
+            data: {
+                is_visible: true,
+                books: my_bookshelf
+            },
+            methods: {
+                clicklistview: function(){
+                    this.is_visible = true;
+                },
+                clickdetailview: function(){
+                    this.is_visible = false
+                }
+            }
+        })
     </script>
 </body>
 </html>
