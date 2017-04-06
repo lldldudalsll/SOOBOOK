@@ -12,6 +12,10 @@ a {
   height: 100vh;
 }
 
+ul, li {
+  list-style: none;
+}
+
 .header {
   padding: 0 100px;
   height: 10vh;
@@ -22,7 +26,9 @@ a {
   background: rgba(42, 34, 34, 0.6);
   color: #fff;
 }
-
+.logo {
+  padding-top: 10px;
+}
 .header .login {
   display: flex;
   text-align: right;
@@ -53,6 +59,44 @@ button {
   background: #eceef1;
 }
 
+
+/* --- view option --- */
+
+.view-option-control {
+  margin: 50px 0 0 90px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+select{
+  width: 100px;
+  height: 30px;
+  border: 1px solid #d7d0d0;
+}
+.view-option-btn{
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  background: none;
+  /*padding-left: 15px;*/
+  /*width: 30px;*/
+  /*height: 30px;*/
+}
+.search-mybook {
+  padding-right: 95px;
+}
+label {
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+input {
+  border-style: none;
+  border-radius: 3px;
+  border: 1px solid #d7d0d0;
+  height: 20px;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -63,11 +107,13 @@ button {
 
 .add-book {
   margin: 0 auto;
-  width: 40%;
-  height: 40%;
-  margin-top: 100px;
+  margin-top: 50px;
+  width: 90%;
+  height: 50%;
   padding-top: 200px;
-  border: 1px solid #888;
+  border: 1px solid #d7d0d0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 

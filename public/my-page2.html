@@ -54,52 +54,44 @@
           </ul>
         </nav>
 
-        
-            <main class="my-bookshelf" v-if="is_visible">
-                <div class="book1" v-for="book in books">
-                    <img :src="book.src" alt="" height="60%">
+    
+        <main class="my-bookshelf" v-if="is_visible">
+            <ul class="book-list" v-for="book in books">
+                <li>
+                    <img :src="book.src" alt="" width="130px" height="190px" class="book-list-img">
                     <h3 class="title">{{book.title}}</h3>
                     <!--<p class="author">{{book.author}}</p>-->
                     <div class="rating">
                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                     </div>
-                </div>
-            </main>
+                </li>
+            </ul>
+        </main>
 
-            <main class="my-bookshelf" v-if="!is_visible">
-                <!--<div class="book1" v-for="book in books">-->
-            </main>
-        
+        <main class="my-bookshelf" v-if="!is_visible">
+            <ul class="book-detail" v-for="book in books">
+                <li class="detail">
+                    <img :src="book.src" alt="" width="130px" height="190px" class="book-list-img detail-img">
+                    <div class="detail-comment">
+                        <h3 class="title">{{book.title}}</h3>
+                        <p class="author">{{book.author}}</p>
+                        <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                        </div>    
+                        <p class="review">{{book.review}}</p>
+                    </div>
+                </li>
+            </ul> 
+        </main>
+    
 
         
     </div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--<script src="./js/sign-in.js">-->
-    
-        
-    </script>
-    <!--<script>
-        // 배경 색상 변경
-        // DOM API, CSS 선택자 중에 클래스 선택자로 대상을 선택
-        var color_list       = document.querySelector('.menu-colorlist')
-        var bg_color         = document.body;
-        var color_list_items = color_list.querySelectorAll('.color-option');
-        // console.log(color_list_items);
-        // 배경 색상 변경
-        for (var i = 0; i < color_list_items.length; i++) {
-          color_list_items[i].onclick = function() {
-            var my_color = window.getComputedStyle(this,null).background;
-            console.log(my_color);
-            bg_color.style.background = my_color;
-            return false;
-          };
-        };
 
-    </script>-->
     <!-- CDN: Vue -->
     <script src="https://unpkg.com/vue"></script>
-    <!--<script src="./js/my-page.js"></script>-->
     <script src="./DB/mybookshelf.js"></script>
     <script>
         var vm = new Vue ({
@@ -116,7 +108,8 @@
                     this.is_visible = false
                 }
             }
-        })
+        });
     </script>
+    <script src="./js/my-page.js"></script>
 </body>
 </html>

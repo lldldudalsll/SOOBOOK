@@ -4,7 +4,8 @@ body {
   box-sizing: border-box;
 }
 a {
-  color: #181818
+  color: #fff;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -12,7 +13,7 @@ a {
 }
 
 .logo {
-  color: #eceef1;
+  padding-top: 10px;
 }
 
 .header {
