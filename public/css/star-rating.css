@@ -1,238 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Francois+One);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
-
-/* -----normalize----- */
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: #fff
-}
-.wrapper {
-  height: 100vh;
-}
-
-/* ----- header ----- */
-
-.header {
-  padding: 0 100px;
-  height: 10vh;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(12, 34, 34, 0.6);
-  color: #fff;
-}
-.sign-section {
-  display: flex;
-}
-.logo {
-  padding-top: 10px;
-}
-.log-out {
-  padding-top: 16px;
-  padding-left: 20px;
-}
-
-/* --- view option --- */
-
-.view-option-control {
-  margin: 50px 0 0 90px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-select{
-  width: 100px;
-  height: 30px;
-  border: 1px solid #d7d0d0;
-}
-.view-option-btn{
-  vertical-align: middle;
-  cursor: pointer;
-  border: none;
-  background: none;
-  /*padding-left: 15px;*/
-  /*width: 30px;*/
-  /*height: 30px;*/
-}
-.search-mybook {
-  padding-right: 95px;
-}
-label {
-  font-size: 15px;
-  padding-right: 5px;
-}
-
-input {
-  border-style: none;
-  border-radius: 3px;
-  border: 1px solid #d7d0d0;
-  height: 20px;
-}
-
-
-
-/* ----- nav color -----*/
-
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-colorlist {
-  cursor: pointer;
-  border-radius: 0 6px 6px 0;
-  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.25);
-  background: #fff;
-  position: absolute;
-  display: inline-flex;
-  padding: 0.3em 1.5em 0.3em 0.3em;
-  transform: translateX(-90%);
-  transition: all 0.3s ease-out;
-}
-
-.menu-colorlist:hover {
-  transform: translateX(0);
-}
-
-.menu-colorlist::after {
-  position: absolute;
-  top: 50%;
-  right: 4px;
-  content: '▶';
-  color: #e7e7e7;
-  transform: translateY(-50%);
-}
-
-.menu-colorlist ul {
-  display: flex;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.menu-colorlist li {
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.menu-colorlist a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.menu-colorlist__item--purple {
-  background: linear-gradient(to top, #aaa4ec 0%, #aaa4ec 10%, #fff 100%);
-}
-
-.menu-colorlist__item--pink-sky {
-  background: linear-gradient(120deg, #e3bfce 0%, #8fd3f4 100%);
-}
-
-.menu-colorlist__item--pink-green {
-  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
-
-.menu-colorlist__item--grey {
-  background: linear-gradient(to top, #ebebeb 0%, #dcdddf 52%, #c4c5c7 100%);
-}
-
-.menu-colorlist__item--blue {
-  background: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
-}
-
-
-
-/* -----   main list   ----- */
-
-
-.my-bookshelf {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  /*align-items: center;*/
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 90%;
-  /*height: */
-  background: #fff;
-  border: 1px solid #d7d0d0;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
-}
-
-.book-list {
-  margin: 30px 0 30px 30px;
-  display: flex;
-  flex-flow: column wrap;
-  /*justify-content: center;*/
-  /*align-items: top;*/
-  width: 150px;
-  height: 300px;
-  text-align: center;
-}
-.book-list-img {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
-.book-list-img:hover {
-  transform: translateY(-5px);
-  transition: 0.5s ease-in
-}
-h3 {
-  margin: 0;
-  margin-top: 5px;
-  height: 23px;
-}
-.title {
-  font-size: 13px;
-}
-.author {
-  margin: 10px 0; 
-  font-size: 13px;
-}
-
-/* -----   main detail  ----- */
-
-.book-detail{
-  margin: 30px 0 30px 30px;
-  width: 20%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.detail {
-  margin-left: 10px;
-  display: inline-flex;
-}
-
-.detail-img {
-  float: left;
-}
-.detail-comment {
-  margin-left: 10px;
-  float: right;
-}
-
-/* -----   star rating   ----- */
-
 .ratingControl {
   position: relative;
   width: 120px;
@@ -240,9 +7,7 @@ h3 {
   user-select: none;
   margin: 0 auto;
 }
-label {
-  padding: 0;
-}
+
 .ratingControl input {
   visibility: hidden;
   width: 0;
@@ -315,6 +80,16 @@ input:checked ~ .ratingControl-stars:active {
 }
 
 .ratingControl-stars--half {
-  width: 11px;
+  width: 10px;
 }
 
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+.demo {
+  padding: 40px;
+}

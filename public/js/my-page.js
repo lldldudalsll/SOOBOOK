@@ -16,26 +16,47 @@ for (var i = 0; i < color_list_items.length; i++) {
 };
 
 
+var lable = document.querySelectorAll('label');
+var input = document.querySelectorAll('input');
+var rating = document.querySelectorAll('#rating')
+console.log(rating);
+// console.log(lable);
 // Star Rating
-function starRating() {
-    var star = document.querySelectorAll('span');
-    console.log(star);
-    var stara = star.setAttribute('class', 'aaa');
-    console.log(stara);
-    for (var i=0; i<star.length; i++) {
-        // var beforestar = document.querySelector('span:before')
-        // console.log(beforestar);
-        star[i].onclick = function() {
-            // console.log('clicked');
-            // console.log(this);
-            var hoverstar = document.querySelector('span:hover');
-            console.log(hoverstar);
-            hoverstar.style.cssText = "color : gold";
-            
-        }
-    }
+// var function () {}
+input.onclick = function () {
+    var a = $("input").prop("checked").value;
+    console.log(a);
 }
-starRating();
+
+
+
+
+
+
+
+
+
+
+
+// function starRating() {
+//     var star = document.querySelectorAll('span');
+//     console.log(star);
+//     star.setAttribute('class', 'aaa');
+//     // console.log(stara);
+//     for (var i=0; i<star.length; i++) {
+//         // var beforestar = document.querySelector('span:before')
+//         // console.log(beforestar);
+//         star[i].onclick = function() {
+//             // console.log('clicked');
+//             // console.log(this);
+//             var hoverstar = document.querySelector('span:hover');
+//             console.log(hoverstar);
+//             hoverstar.style.cssText = "color : gold";
+            
+//         }
+//     }
+// }
+// starRating();
 
 
 // if () {

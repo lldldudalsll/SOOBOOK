@@ -4,6 +4,36 @@
             "userid": "hi@hi.com",
             "userpassword": "123456",
             "usernickname": "hi"
+        },
+        {
+            "userid": "hi1@hi.com",
+            "userpassword": "123456",
+            "usernickname": "hihi"
+        },
+        {
+            "userid": "hi2@hi.com",
+            "userpassword": "123456",
+            "usernickname": "ho"
+        },
+        {
+            "userid": "hi3@hi.com",
+            "userpassword": "123456",
+            "usernickname": "hoo"
+        },
+        {
+            "userid": "hi4@hi.com",
+            "userpassword": "123456",
+            "usernickname": "hoho"
+        },
+        {
+            "userid": "hi5@hi.com",
+            "userpassword": "123456",
+            "usernickname": "hihihi"
+        },
+        {
+            "userid": "test@test.com",
+            "userpassword": "123456",
+            "usernickname": "hiii"
         }
     ]
 }
