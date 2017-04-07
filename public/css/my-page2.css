@@ -1,4 +1,4 @@
-/* -----기본 설정----- */
+/* -----normalize----- */
 
 body {
   margin: 0;
@@ -76,6 +76,8 @@ input {
 
 
 /* ----- nav color -----*/
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -154,7 +156,8 @@ li {
 
 
 
-/* -----   main   ----- */
+/* -----   main list   ----- */
+
 
 .my-bookshelf {
   display: flex;
@@ -200,22 +203,8 @@ h3 {
   margin: 10px 0; 
   font-size: 13px;
 }
-.rating {
-  /*unicode-bidi: normal;*/
-  direction: rtl;
-  margin-top: 5px;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   color: gold;
-}
+
+/* -----   main detail  ----- */
 
 .book-detail{
   margin: 30px 0 30px 30px;
@@ -237,4 +226,23 @@ h3 {
 .detail-comment {
   margin-left: 10px;
   float: right;
+}
+
+/* -----   star rating   ----- */
+
+.rating {
+  /*unicode-bidi: normal;*/
+  direction: rtl;
+  margin-top: 5px;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
 }
