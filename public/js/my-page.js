@@ -16,15 +16,35 @@ for (var i = 0; i < color_list_items.length; i++) {
 };
 
 
-var lable = document.querySelectorAll('label');
+
+
+// Star Rating
+
+
+var ratingControl = document.querySelector('.ratingControl');
+var label = document.querySelectorAll('label');
+console.log(label);
+
+
 var input = document.querySelectorAll('input');
-var rating = document.querySelectorAll('#rating')
+console.log(input);
+for (var i = 0; i <= input.length; i++) {
+    // var star_value = input[i].defaultValue;
+    // console.log(star_value);
+    label.click = function(){
+        // this.getAttribute('id', 'rating-5');
+        console.log(this);
+    }
+}
+
+
+var rating = document.querySelectorAll('rating');
 console.log(rating);
 // console.log(lable);
-// Star Rating
-// var function () {}
-input.onclick = function () {
-    var a = $("input").prop("checked").value;
+
+
+rating.onclick = function () {
+    var a = $("input").attr("rating", value);
     console.log(a);
 }
 

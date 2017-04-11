@@ -3,14 +3,14 @@
 
 /* -----normalize----- */
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 a {
   text-decoration: none;
-  color: #fff
+  color: #fff;
 }
 .wrapper {
   height: 100vh;
@@ -20,12 +20,12 @@ a {
 
 .header {
   padding: 0 100px;
-  height: 10vh;
+  height: 58px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background: rgba(12, 34, 34, 0.6);
+  background: #181818;
   color: #fff;
 }
 .sign-section {
@@ -34,9 +34,49 @@ a {
 .logo {
   padding-top: 10px;
 }
+.login {
+  margin-top: 16px; 
+}
 .log-out {
   padding-top: 16px;
   padding-left: 20px;
+}
+.log-out-anchor:hover {
+  border-bottom: 1px solid #fff
+}
+
+/* ---   visual    --- */
+
+.visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background-image: url(../asset/cta-header.jpg);
+}
+
+.book-find-area {
+  font-size: 26px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.nav-book {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(#0096ff, #005dff);
+  width: 138px;
+  height: 38px;
+  text-align: center;
+  text-decoration: none;
+}
+.nav-book:hover {
+  background: linear-gradient(#008aea, #024dcf);
 }
 
 /* --- view option --- */
@@ -169,42 +209,68 @@ li {
   /*align-items: center;*/
   margin: 0 auto;
   margin-top: 50px;
-  width: 90%;
+  padding: 0 180px;
+  width: 100%;
   /*height: */
-  background: #fff;
-  border: 1px solid #d7d0d0;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  background: #f9f9f9;
+  border-top: 1px solid #d7d0d0;
+  /*border-radius: 10px;*/
+  /*box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);*/
 }
 
 .book-list {
-  margin: 30px 0 30px 30px;
+  /*margin: 30px 0 30px 30px;*/
   display: flex;
   flex-flow: column wrap;
   /*justify-content: center;*/
   /*align-items: top;*/
-  width: 150px;
-  height: 300px;
-  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  margin: 50px 22px;
+  position: relative;
+  width: 202px;
 }
-.book-list-img {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
-.book-list-img:hover {
+.book-list:hover {
   transform: translateY(-5px);
   transition: 0.5s ease-in
 }
+.img-box {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: #ececec
+}
+.book-list-img {
+  align-items: center;
+}
+
+.book-info {
+  margin: 0 25px;
+}
+
 h3 {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 23px;
 }
 .title {
   font-size: 13px;
+  text-align: center;
+  padding-bottom: 2px;
 }
 .author {
-  margin: 10px 0; 
+  margin-bottom: 11px; 
   font-size: 13px;
+  text-align: center;
+}
+.line {
+  border-top: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+}
+.delete-field {
+  height: 25px;
+  background: #ececec;
 }
 
 /* -----   main detail  ----- */
@@ -231,6 +297,7 @@ h3 {
   float: right;
 }
 
+
 /* -----   star rating   ----- */
 
 .ratingControl {
@@ -239,13 +306,14 @@ h3 {
   height: 30px;
   user-select: none;
   margin: 0 auto;
+  margin-top: 5px;
 }
 label {
   padding: 0;
 }
 .ratingControl input {
   visibility: hidden;
-  width: 0;
+  width: 10px;
 }
 
 .ratingControl-stars {
