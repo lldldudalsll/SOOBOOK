@@ -1,6 +1,6 @@
 # soobook
 
-> A Vue.js project
+> soobook Vue.js project
 
 ## Build Setup
 

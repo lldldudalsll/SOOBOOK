@@ -1,35 +1,28 @@
 <template>
-    <div>
-        <main class="main">
-            <div class="main-comment">
-                <p>{{message}}</p>
-            </div>
-        </main>
-    </div>
+  <!-- <div class="main-bg"> -->
+  <div>
+    <!-- <router-view name="header"></router-view> -->
+
+    <p class="slogan">
+      문득 아름다운 것과 마주쳤을 때,<br>
+      지금 곁에 있으면 얼마나 좋을까 하고,<br>
+      떠오르는 얼굴이 있다면 그대는<br>
+      사랑하고 있는 것이다.<br>
+      <span> - 이문재 , 농담 中 - </span>
+    </p>
+
+  </div>
 </template>
-
 <script>
-    export default {
-        data() {
-            return {
-                message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, numquam."
-            }
-        }
+export default {
+  name: "",
+  data: function data() {
+    return {
+
     }
+  }
+}
 </script>
-
-<style lang="sass">
-
-.main
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  background: url('../assets/images/book3.jpg') no-repeat
-  background-size: cover
-  .main-comment 
-    position: absolute
-    font-size: 20px
-    color: rgb(28.8%, 49.8%, 64.8%)
+<style>
 
 </style>
